@@ -55,7 +55,7 @@ const CheckBox = ({
         <span
           id={`${name}-error`}
           aria-live="polite"
-          className="checkbox-error error-message"
+          className={`checkbox-error checkbox-error-${name} error-message `}
           role="alert"
         >
           {errorMessage}

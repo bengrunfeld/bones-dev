@@ -98,7 +98,7 @@ const TextInput = ({
             id={`${name}-error`}
             role="alert"
             aria-live="polite"
-            className={`input-error input-error-${name}`}
+            className={`text-input-error text-input-error-${name} error-message`}
           >
             {errorMessage}
           </span>
