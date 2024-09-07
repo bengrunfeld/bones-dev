@@ -34,13 +34,14 @@ const CheckBox = ({
 }: CheckBoxProps) => {
   return (
     <>
-      <label>
-        <span aria-disabled="false" className="checkbox-wrapper">
+      <label htmlFor={name}>
+        <span className="checkbox-wrapper">
           <input
+            id={name}
             type="checkbox"
             data-indeterminate="false"
-            aria-describedby={`${name}-error`}
-            aria-label={ariaLabelText}
+            aria-describedby={error ? `${name}-error` : undefined}
+            aria-label={(!labelText && ariaLabelText) || undefined}
             value={initialValue || ""}
             {...register(name, required ? { required: errorMessage } : {})}
             {...inputProps}
