@@ -1,5 +1,6 @@
 "use client";
 import CheckBox from "@repo/ui/CheckBox";
+import RadioButtonGroup from "@repo/ui/RadioButtonGroup";
 import TextInput from "@repo/ui/TextInput";
 import { FieldValues } from "react-hook-form";
 import { useForm } from "react-hook-form";
@@ -41,6 +42,16 @@ export default function HomePage() {
             errorMessage="This field is required"
             error={errors?.["agree-to-terms"]}
             required
+          />
+        </div>
+        <div>
+          <RadioButtonGroup
+            radioButtons={[
+              { value: "first", labelText: "First", groupName: "" },
+              { value: "second", labelText: "Second", groupName: "" },
+            ]}
+            groupLabel="Bens Radio Group"
+            groupName="Bens Radio Group Name"
           />
         </div>
         <div>

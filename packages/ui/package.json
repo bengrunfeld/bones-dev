@@ -7,7 +7,8 @@
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx",
     "./CheckBox": "./src/CheckBox/CheckBox.tsx",
-    "./TextInput": "./src/TextInput/TextInput.tsx"
+    "./TextInput": "./src/TextInput/TextInput.tsx",
+    "./RadioButtonGroup": "./src/RadioButtonGroup/RadioButtonGroup.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
