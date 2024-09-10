@@ -30,7 +30,11 @@ const RadioButtonGroup = ({
   groupLabel,
   groupName,
 }: RadioButtonGroupProps) => (
-  <div role="radiogroup" aria-labelledby={`${groupName}-label`}>
+  <div
+    role="radiogroup"
+    aria-labelledby={`${groupName}-label`}
+    className="radio-button-group-container"
+  >
     <label id={`${groupName}-label`}>{groupLabel}</label>
     {radioButtons.map((item) => (
       <RadioButton
