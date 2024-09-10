@@ -20,7 +20,7 @@ const RadioButton = ({ value, labelText, groupName }: RadioButtonProps) => {
 };
 
 export type RadioButtonGroupProps = {
-  groupLabel: string;
+  groupLabel: string | ReactNode;
   groupName: string;
   radioButtons: RadioButtonProps[];
 };
