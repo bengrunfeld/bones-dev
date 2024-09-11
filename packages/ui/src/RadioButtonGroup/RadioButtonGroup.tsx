@@ -1,16 +1,19 @@
 import { ReactNode } from "react";
 import RadioButton, { RadioButtonProps } from "./RadioButton";
+import { FieldValues, UseFormRegister } from "react-hook-form";
 
 export type RadioButtonGroupProps = {
-  groupLabel: string | ReactNode;
   groupName: string;
   radioButtons: RadioButtonProps[];
+  groupLabel?: string | ReactNode;
+  error?: string;
 };
 
 const RadioButtonGroup = ({
   radioButtons,
   groupLabel,
   groupName,
+  error,
 }: RadioButtonGroupProps) => (
   <div
     role="radiogroup"
@@ -26,6 +29,7 @@ const RadioButtonGroup = ({
         value={item.value}
         labelText={item?.labelText}
         groupName={groupName}
+        register={item.register}
       />
     ))}
   </div>

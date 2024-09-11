@@ -21,7 +21,7 @@ export default function HomePage() {
   } = useForm();
 
   const handleFormSubmit = (data: FieldValues) => {
-    console.log(data);
+    console.log("SUBMIT", data);
   };
 
   return (
@@ -47,8 +47,18 @@ export default function HomePage() {
         <div>
           <RadioButtonGroup
             radioButtons={[
-              { value: "first", labelText: "First", groupName: "" },
-              { value: "second", labelText: "Second", groupName: "" },
+              {
+                value: "male",
+                labelText: "Male",
+                groupName: "gender",
+                register,
+              },
+              {
+                value: "female",
+                labelText: "Female",
+                groupName: "gender",
+                register,
+              },
             ]}
             groupLabel="Bens Radio Group"
             groupName="Bens Radio Group Name"
