@@ -1,10 +1,11 @@
 "use client";
 import CheckBox from "@repo/ui/CheckBox";
 import RadioButtonGroup from "@repo/ui/RadioButtonGroup";
-import TextInput from "@repo/ui/TextInput";
+import Input from "@repo/ui/Input";
 import { FieldValues } from "react-hook-form";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
+import Button from "@repo/ui/Button";
 
 const StyledContainer = styled.div`
   padding: 50px;
@@ -27,7 +28,7 @@ export default function HomePage() {
   return (
     <form onSubmit={handleSubmit(handleFormSubmit)}>
       <StyledContainer>
-        <TextInput
+        <Input
           labelText="First Name"
           legendText="Enter your first name"
           name="first-name"
@@ -64,8 +65,9 @@ export default function HomePage() {
             groupName="Bens Radio Group Name"
           />
         </div>
+
         <div>
-          <input type="submit" />
+          <Button type="submit">Submit!</Button>
         </div>
       </StyledContainer>
     </form>

@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./button": "./src/button.tsx",
+    "./Button": "./src/Button/Button.tsx",
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx",
     "./CheckBox": "./src/CheckBox/CheckBox.tsx",
-    "./TextInput": "./src/TextInput/TextInput.tsx",
+    "./Input": "./src/Input/Input.tsx",
     "./RadioButtonGroup": "./src/RadioButtonGroup/RadioButtonGroup.tsx"
   },
   "scripts": {

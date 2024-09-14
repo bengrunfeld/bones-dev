@@ -7,3 +7,11 @@ Other UI frameworks like Material UI are highly opinionated as far as CSS and be
 Enjoy!
 
 Author: Ben Grunfeld
+
+## Logo
+
+- Source: https://www.svgrepo.com/svg/532617/bones?edit=true
+- Thickness: 27%
+- Color: #3d3d3d
+- BG Shape: Circle
+- BG Color: #ffffff
