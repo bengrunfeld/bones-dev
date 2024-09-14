@@ -8,7 +8,9 @@
     "./code": "./src/code.tsx",
     "./CheckBox": "./src/CheckBox/CheckBox.tsx",
     "./Input": "./src/Input/Input.tsx",
-    "./RadioButtonGroup": "./src/RadioButtonGroup/RadioButtonGroup.tsx"
+    "./RadioButtonGroup": "./src/RadioButtonGroup/RadioButtonGroup.tsx",
+    "./CustomSelect": "./src/CustomSelect/CustomSelect.tsx",
+    "./Select": "./src/Select/Select.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
