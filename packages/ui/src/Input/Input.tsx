@@ -5,6 +5,8 @@ type InputProps = {
   register: UseFormRegister<FieldValues>;
   validation?: FieldValues;
   type?:
+    | "button"
+    | "checkbox"
     | "color"
     | "date"
     | "datetime-local"
@@ -15,7 +17,11 @@ type InputProps = {
     | "month"
     | "number"
     | "password"
+    | "radio"
     | "range"
+    | "reset"
+    | "search"
+    | "submit"
     | "tel"
     | "text"
     | "time"
@@ -43,7 +49,7 @@ type InputProps = {
     | "none";
 };
 
-const TextInput = ({
+const Input = ({
   type = "text",
   labelText,
   className,
@@ -108,4 +114,4 @@ const TextInput = ({
   );
 };
 
-export default TextInput;
+export default Input;
