@@ -15,6 +15,7 @@ export type SelectProps = {
   ariaLabel?: string;
   required?: boolean;
   disabled?: boolean;
+  placeholderText?: string;
 };
 
 const Select = ({
@@ -25,6 +26,7 @@ const Select = ({
   hasError,
   register,
   errorMessage,
+  placeholderText,
   required = false,
   disabled = false,
 }: SelectProps) => {
@@ -42,7 +44,7 @@ const Select = ({
           required: required ? "This field is required" : false,
         })}
       >
-        <option value="">Select an option</option> {/* Placeholder option */}
+        <option value="">{placeholderText || "Select an option"}</option>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}
