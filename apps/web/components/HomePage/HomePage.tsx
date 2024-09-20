@@ -1,13 +1,12 @@
 "use client";
-import CheckBox from "@repo/ui/CheckBox";
-import RadioButtonGroup from "@repo/ui/RadioButtonGroup";
-import Input from "@repo/ui/Input";
+
 import { FieldValues } from "react-hook-form";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
-import Button from "@repo/ui/Button";
-import CustomSelect, { Option } from "@repo/ui/CustomSelect";
-import Select from "@repo/ui/Select";
+
+import { Button, CheckBox, Input, Select } from "tendon-ui";
+import { RadioButtonGroup } from "./RadioButtonGroup";
+import { Option } from "tendon-ui/dist/Select/Select";
 
 const StyledContainer = styled.div`
   padding: 50px;
@@ -16,7 +15,7 @@ const StyledContainer = styled.div`
   gap: 50px;
 `;
 
-const StyledSelect = styled(CustomSelect)`
+const StyledSelect = styled(Select)`
   ul {
     list-style: none;
   }
@@ -81,6 +80,8 @@ export default function HomePage() {
           register={register}
         />
 
+        <Button>Hello</Button>
+
         <div>
           <CheckBox
             name="agree-to-terms"
@@ -109,15 +110,6 @@ export default function HomePage() {
             ]}
             groupLabel="Bens Radio Group"
             groupName="Bens Radio Group Name"
-          />
-        </div>
-
-        <div>
-          <StyledSelect
-            options={options}
-            label="Fruits"
-            onChange={handleChange}
-            name="fruits"
           />
         </div>
 
